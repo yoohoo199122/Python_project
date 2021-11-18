@@ -1,10 +1,11 @@
-my_int = 7
-my_float = 7.7
-my_str = "Hello world"
-my_list = ['a', '7']
-my_tuple = ('b', '5')
-my_dict = {'car': 'lambo', 'ball': 'Yellow'}
+def my_func(a, b):
+    try:
+        z = a / b
+        return z
+    except ZeroDivisionError:
+        z = 0
+    except ValueError:
+        return "вводите только число"
 
-super_list = [my_int, my_float, my_str, my_list, my_tuple, my_dict]
-for i in super_list:
-    print(f'{i} is {type(i)}')
+
+print(my_func(int(input("Введите число a:")), int(input("введите число b:"))))
