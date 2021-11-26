@@ -1,0 +1,4 @@
+Barbara 50000
+Bob 5000
+Lara 7000
+Fred 12000
